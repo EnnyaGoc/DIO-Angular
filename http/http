@@ -1,0 +1,16 @@
+
+url
+request method
+Request Headers
+    content-type: application/json
+Request Body
+{
+    "name": "teste"
+}
+
+Status Code: 200 ok
+
+Request Body: como a resp esta configurada
+
+Request Body: a resposta em si
+
