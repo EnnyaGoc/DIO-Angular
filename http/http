@@ -1,0 +1,14 @@
+Requisiao HTTP
+
+URL: http://pokeapi.co/api/v2/pokemon
+    ${Endereço}/${path = caminho de identificação do recurso}
+
+    http://pokeapi.co/api/v2/pokemon?type=grass&name=i
+    filtro dps do ?
+Request Method: GET | POST | PUT | DELETE
+
+Request Headers
+Configuração
+
+Response Headers
+Configuração
