@@ -27,18 +27,13 @@ const pokemonList = document.getElementById('pokemonList')
 
 
  
-pokeApi.getPokemons().then((pokemons) => {
-    const listItems = []
-//no map eu posso passar uma funçao q transforma um elemento em outro
-    pokemons.map[]
-        for (let i = 0; i < pokemons.length; i++) {
-            const pokemon = pokemons[i];
-            listItems.push(convertPokemonToHtml(pokemon))
-
-        }
-//incrementando o item no html
-            pokemonList.innerHTML += 
-        
-    })
-    .catch((error) => console.error(error))
+pokeApi.getPokemons().then((pokemons = []) => {
     
+    //no map eu posso passar uma funçao q transforma um elemento em outro
+    //essa funçao vai transformar o pokemon num html
+    //join junta todos os elementos da lista em uma string 
+    //incrementando o item no html
+    pokemonList.innerHTML += pokemons.map(convertPokemonToHtml).join('')
+   
+
+}) 
