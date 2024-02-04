@@ -21,7 +21,7 @@ function convertPokeApiDetailToPokemon (pokeDetail){
 }
 
 pokeApi.getPokemonDetail = (pokemon) => {
-    return  fetch(pokemon.url)
+    return fetch(pokemon.url)
         .then((response) => response.json())
         .then(convertPokeApiDetailToPokemon)
 }
@@ -54,16 +54,16 @@ pokeApi.getPokemons = (offset = 0, limit = 5) => {
 //o fetch em cima traz a lista de pokemons, e embaixo transforma a lista em novas requisiçoes
 
 //esse promise espera q todas as promesas terminem, e qndo terminar, chama o then
-Promise.all([
-  fetch(`https://pokeapi.co/api/v2/pokemon/1`),
-  fetch(`https://pokeapi.co/api/v2/pokemon/2`),
-  fetch(`https://pokeapi.co/api/v2/pokemon/3`),
-  fetch(`https://pokeapi.co/api/v2/pokemon/4`),
-  fetch(`https://pokeapi.co/api/v2/pokemon/5`),
+//Promise.all([
+  //fetch(`https://pokeapi.co/api/v2/pokemon/1`),
+  //fetch(`https://pokeapi.co/api/v2/pokemon/2`),
+  //fetch(`https://pokeapi.co/api/v2/pokemon/3`),
+ // fetch(`https://pokeapi.co/api/v2/pokemon/4`),
+  //fetch(`https://pokeapi.co/api/v2/pokemon/5`),
 
-]).then((results) => {
-    console.log(results)
-})
+//]).then((results) => {
+   // console.log(results)
+//})
 
 
 

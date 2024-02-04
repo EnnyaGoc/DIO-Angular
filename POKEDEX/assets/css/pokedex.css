@@ -82,7 +82,6 @@
 .pokemon{
    margin: 0.5rem;
    padding: 1rem;
-   color: #fff;
    border-radius: 1rem;
    display: flex;
    flex-direction: column;
@@ -130,9 +129,7 @@
 .pokemon .detail img{
     max-width: 100%;
     height: 70px;
-    align-self: flex-end;
 }
-
 
 .pagination{
     display: flex;
