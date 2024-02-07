@@ -43,9 +43,9 @@ pokeApi.getPokemons = (offset = 0, limit = 5) => {
         .then((response) => response.json())
         //o json vem cm muitos detalhes, oq interesse sao só os resultados
         .then((jsonBody) => jsonBody.results)
-        //a lista de pokemons vaa ser mapeada em uma lista de requisiçao dos detalhes d epokemons qé um novo fetch pra url do pokemon, e convertendo a resposta em json
+        //a lista de pokemons vai ser mapeada em uma lista de requisiçao dos detalhes d epokemons qé um novo fetch pra url do pokemon, e convertendo a resposta em json
         .then((pokemons) => pokemons.map(pokeApi.getPokemonDetail))
-        //espérando q todas as requisiçoes da lista terminem
+        //esperando q todas as requisiçoes da lista terminem
         .then((detailRequests) => Promise.all(detailRequests))
         //quando terminar, vai exibir a lista de detalhes
         .then((pokemonsDetails) => pokemonsDetails)
